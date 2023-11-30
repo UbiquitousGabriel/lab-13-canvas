@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+
+	<canvas id="sketch" width="300" height="300">
+
+	</canvas>
+
+	<script>
+		function draw() {
+		 	var sketch = document.getElementById('sketch');
+			var context = sketch.getContext("2d");
+			
+			
+			context.fillStyle = "#0000ff";
+
+			for (let i = 0; i<= 4; i++) {
+				context.fillRect((i*25), 20, 20, 20);
+
+
+
+
+
+
+
+
+			}
+			// FILL SHAPES WITH COLORS:
+			// https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#15.0
+				// context.fillStyle = "#00ff00"
+					// "#ff0000" - RED
+					// "#00ff00" - GREEN
+					// "#0000ff" - BLUE
+					// "#000000" - BLACK
+
+			// find more HEX color codes:
+				// https://color.adobe.com/create
+				// or: https://htmlcolorcodes.com/
+
+        	
+			// RECTANGLE: https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#12.0
+        		// context.fillRect(x, y, width, height);
+
+
+
+
+		}
+
+	</script>
+
+</body>
+</html>
