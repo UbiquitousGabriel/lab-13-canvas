@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+
+	<canvas id="sketch" width="1000" height="1000">
+
+	</canvas>
+
+	<script>
+		function draw() {
+		 	var sketch = document.getElementById('sketch');
+			var context = sketch.getContext("2d");
+			var line = 1;
+
+
+            for (line =1; line <= 10; line++) {
+                if (line%2==1) {
+                    context.fillStyle = "#D05AE8";
+			         // FILL SHAPES WITH COLORS:
+		
+        	        context.fillRect(line*60, 30, 25, 25);
+        		    // context.fillRect(x, y, width, height);
+                } else if (line%2==0) {
+                    context.beginPath();
+                    context.fillStyle = 'green';
+                    context.arc(line*60, 45, 10, 0, 2 * Math.PI);
+                    context.fill();
+
+
+
+                }
+
+
+
+            }
+
+
+
+
+
+		}
+
+	</script>
+
+</body>
+</html>

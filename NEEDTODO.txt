@@ -1,0 +1,10 @@
+Part 1
+    alternating.html
+
+Part 2
+    Checkerboard.html
+    Hemisphere.html
+    threeCircles.html
+    circleGrow.html
+
+No need to do Part 3
