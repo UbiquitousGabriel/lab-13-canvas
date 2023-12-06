@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+
+	<canvas id="sketch" width="300" height="300">
+
+	</canvas>
+
+	<script>
+
+        var circRAD = prompt("What is the radius?");
+        var circCOL = prompt("What color do you want your circle to be? red, blue, or green?");
+
+		function draw() {
+		 	var sketch = document.getElementById('sketch');
+			var context = sketch.getContext("2d");
+			
+            context.beginPath();
+            context.arc(150, 150, 100, 0, 2 * Math.PI);
+            context.fillStyle = 'red';
+            context.fill();
+            context.stroke();
+
+            
+            context.beginPath();
+            context.arc(150, 150, 75, 0, 2 * Math.PI);
+            context.fillStyle = 'blue';
+            context.fill();
+            context.stroke();
+
+            
+            context.beginPath();
+            context.arc(150, 150, 50, 0, 2 * Math.PI);
+            context.fillStyle = 'green';
+            context.fill();
+            context.stroke();
+
+
+
+
+		}
+
+	</script>
+
+</body>
+</html>
