@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagonal Circles Animation</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas" width="7000" height="7000"></canvas>
+
+  <script>
+    
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+
+      var circCOLR = prompt("What color do you want your circle to be? red, blue, or green?");
+      var x = 10;
+      var y = 10; 
+      var growthSize = 2; 
+      var numCircles = 9;
+
+    function drawCircle() {
+      for (var i = 0; i < numCircles; i++) {
+        
+        context.beginPath();
+        context.fillStyle = circCOLR;
+        context.arc(x, y, i * growthSize + 10, 0, 2 * Math.PI);
+        context.fill();
+
+        x += growthSize + 50;
+        y += growthSize + 50;
+      }
+    };
+
+    drawCircle();
+  </script>
+</body>
+</html>
